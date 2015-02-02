@@ -17,8 +17,8 @@ var playState = {
 
 		//Player\\
 		// this.player = game.add.sprite(200, , 'player');
-		// this.player = game.add.sprite(4500, game.world.height -75 , 'player');
-		this.player = game.add.sprite(4500, 200 , 'player');
+		this.player = game.add.sprite(33, game.world.height -75 , 'player');
+		// this.player = game.add.sprite(4500, 200 , 'player');
 
 
 		this.player.anchor.setTo(0.5, 0.5);
