@@ -44,7 +44,7 @@ var playState = {
 
 		//--Puntaje--\\
 		this.bellotaScore = game.add.sprite(360, 15, 'bellota');
-		this.scoreLabel = game.add.text(400, 17, '0 / 14', { font: '25px Impact', fill: '#ffffff' });
+		this.scoreLabel = game.add.text(400, 17, '0 / 19', { font: '25px Impact', fill: '#ffffff' });
 		
 		this.bellotaScore.fixedToCamera = true;
 		this.scoreLabel.fixedToCamera = true;
@@ -93,7 +93,7 @@ var playState = {
 
 		this.movePlayer();
 
-		if(game.global.score == 14){
+		if(game.global.score == 19){
 			this.playerWin();
 		}
 
@@ -408,8 +408,8 @@ addEnemy: function(){
 	 		this.player.frame = 4;
 		}
 		if (this.cursor.up.isDown && this.player.body.onFloor() ||this.cursor.up.isDown && this.player.body.touching.down) { 
-			 this.player.body.velocity.y = -515; 
-			 // this.player.body.gravity.y = 1200; 
+			 this.player.body.velocity.y = -670; 
+			 this.player.body.gravity.y = 2000; 
 			 this.jumpSound.play();
 		}
 	},
@@ -418,7 +418,7 @@ addEnemy: function(){
 		seed.kill();		
 		game.global.score += 1;
 		this.seedSound.play();
-		this.scoreLabel.text = game.global.score + ' / 17';
+		this.scoreLabel.text = game.global.score + ' / 19';
 	},
 
 
