@@ -17,8 +17,8 @@ var playState = {
 
 		//Player\\
 		// this.player = game.add.sprite(200, , 'player');
-		// this.player = game.add.sprite(33, game.world.height -75 , 'player');
-		this.player = game.add.sprite(4500, 200 , 'player');
+		this.player = game.add.sprite(63, game.world.height -75 , 'player');
+		// this.player = game.add.sprite(4500, 200 , 'player');
 
 
 		this.player.anchor.setTo(0.5, 0.5);
@@ -140,13 +140,13 @@ var playState = {
 		this.ascensors.setAll('body.immovable', true);		
 
 		//checkPoint\\		
-		this.checkPoint = game.add.group();
-		this.checkPoint.enableBody = true;
-    	game.world.swap(this.player, this.checkPoint);
+		// this.checkPoint = game.add.group();
+		// this.checkPoint.enableBody = true;
+  //   	game.world.swap(this.player, this.checkPoint);
 
-		game.add.sprite(1975, 100, 'checkPoint', 0, this.checkPoint);
+		// game.add.sprite(1975, 100, 'checkPoint', 0, this.checkPoint);
 
-		this.checkPoint.setAll('body.immovable', true);
+		// this.checkPoint.setAll('body.immovable', true);
 		//--Camara--\\
 		game.camera.follow(this.player, Phaser.Camera.FOLLOW_TOPDOWN);
   		style = 'STYLE_TOPDOWN';
