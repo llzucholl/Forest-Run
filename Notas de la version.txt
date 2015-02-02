@@ -1,0 +1,10 @@
+Forest-Run v0.2.3-Ti
+
+-Implementación de Tilemaps
+-Nivel mas largo
+-Compatibilidad Movil
+-Añadidas fuentes
+-Agregada música
+
+Fixed:
+Problema en colision con los pinchos
